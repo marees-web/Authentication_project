@@ -1,0 +1,39 @@
+GET http://localhost:2950
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MjU3MTcyMzEsImV4cCI6MTcyNTcxNzI0NiwiYXVkIjoiNjZkYmY3NDdiMGQwZTM5MWQ4MDJhYjFmIiwiaXNzIjoibWFyZWVzLmNvbSJ9.AaKL8j33yT9y9pqekdkZNwLtZ2uuqhJeuXC2e26H3KE
+
+###
+POST http://localhost:2950/mars/login
+Content-Type: application/json
+
+{
+    "email":"Mareesawaris10@gmail.com",
+     "password":"134ed"
+   
+}
+
+###
+POST http://localhost:2950/mars/register 
+Content-Type: application/json
+
+{
+    "email":"Mareesawariss10@gmail.com",
+    "password":"134ed"
+    
+}
+
+###
+POST http://localhost:2950/mars/refresh-token
+Content-Type: application/json
+
+{
+  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MjU3MTk2NDYsImV4cCI6MTc1NzI3NzI0NiwiYXVkIjoiNjZkYmY3NDdiMGQwZTM5MWQ4MDJhYjFmIiwiaXNzIjoibWFyZWVzLmNvbSJ9.uZOnYUbDLUUyKifL4MAptBr_lrCVFNpi4UmiFjqiSTY"  
+}
+
+###
+
+DELETE  http://localhost:2950/mars/logout
+Content-Type: application/json
+
+{
+  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MjU3MTk2NDYsImV4cCI6MTc1NzI3NzI0NiwiYXVkIjoiNjZkYmY3NDdiMGQwZTM5MWQ4MDJhYjFmIiwiaXNzIjoibWFyZWVzLmNvbSJ9.uZOnYUbDLUUyKifL4MAptBr_lrCVFNpi4UmiFjqiSTY" 
+}
